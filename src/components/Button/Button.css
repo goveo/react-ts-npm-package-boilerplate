@@ -1,0 +1,16 @@
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.button-success {
+  background-color: green;
+}
+
+.button-warning {
+  background-color: yellow;
+}
+
+.button-error {
+  background-color: red;
+}
