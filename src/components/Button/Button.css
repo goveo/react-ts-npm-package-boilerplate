@@ -1,16 +1,22 @@
 .button {
-  display: flex;
-  align-items: center;
+  padding: 8px;
+  color: '#333333';
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-success {
-  background-color: green;
+  color: white;
+  background-color: #48bb78;
 }
 
 .button-warning {
-  background-color: yellow;
+  background-color: #ecc94b;
 }
 
 .button-error {
-  background-color: red;
+  color: white;
+  background-color: #f56565;
 }

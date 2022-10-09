@@ -1,11 +1,11 @@
-name: Release
+name: Development
 on:
   push:
     branches:
-      - master
+      - development
 jobs:
-  release:
-    name: Release
+  development:
+    name: Development
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,8 +24,3 @@ jobs:
         run: yarn test
       - name: Build package
         run: yarn build
-      - name: Publish npm package
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
