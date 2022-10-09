@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "react-ts-npm-package-boilerplate",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Boilerplate for React/Typescript npm package",
   "main": "build/index.js",
   "files": [
