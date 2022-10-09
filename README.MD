@@ -2,6 +2,8 @@
 
 Boilerplate for React + Typescript npm package.
 
+https://img.shields.io/github/workflow/status/goveo/react-ts-npm-package-boilerplate/Release
+
 ## Technologies
 
 - 🧰 **Main Stack** - React + Typescript

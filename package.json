@@ -20,7 +20,14 @@
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "boilerplate",
+    "npm",
+    "package",
+    "typescript",
+    "npm-package"
+  ],
   "author": "Yurii Brusentsov",
   "license": "MIT",
   "peerDependencies": {
@@ -31,11 +38,11 @@
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-typescript": "^8.2.5",
-    "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.6",
     "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-knobs": "^6.4.0",
     "@storybook/builder-webpack5": "^6.5.12",
@@ -67,10 +74,9 @@
     "rollup-plugin-terser": "^7.0.2",
     "semantic-release": "^19.0.5",
     "stylelint": "^14.13.0",
+    "stylelint-config-idiomatic-order": "^9.0.0",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^28.0.0",
-    "stylelint-config-standard-scss": "^5.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-prettier": "^2.0.0",
     "ts-jest": "^29.0.3",
@@ -80,24 +86,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/goveo/react-ts-npm-package-boilerplate.git"
-  },
-  "release": {
-    "branches": [
-      "master",
-      "next"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/git",
-        {
-          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-        }
-      ],
-      "@semantic-release/github"
-    ]
   },
   "publishConfig": {
     "access": "public"
