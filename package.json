@@ -20,7 +20,14 @@
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "boilerplate",
+    "npm",
+    "package",
+    "typescript",
+    "npm-package"
+  ],
   "author": "Yurii Brusentsov",
   "license": "MIT",
   "peerDependencies": {
