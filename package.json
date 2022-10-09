@@ -17,7 +17,8 @@
     "lint:styles": "stylelint \"**/*.css\" --fix",
     "lint": "npm-run-all lint:ts lint:styles",
     "format": "prettier --write .",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "storybook": "start-storybook -p 6006"
   },
   "keywords": [],
   "author": "Yurii Brusentsov",
@@ -30,6 +31,11 @@
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-typescript": "^8.2.5",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-knobs": "^6.4.0",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/react": "^6.5.12",
     "@testing-library/react": "^12.1.5",
     "@types/jest": "^29.1.2",
     "@types/react": "^17.0.18",
