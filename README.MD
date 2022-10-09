@@ -7,3 +7,22 @@ Boilerplate for React + Typescript npm package.
 - 🧰 **Main Stack** - React + Typescript
 - 📦 **Builder** - Rollup.js
 - 🚚 **CI/CD** - Github Actions + Semantic Release
+- 🧪 **Testing** - Jest + @testing-library/react
+- 📃 **Formatting** - Eslint + Prettier + Stylelint
+- 💼 **Package Manager** - Yarn
+- 🌈 **UI Testing** - Storybook
+
+## Setup
+
+- Copy/clone repo to some folder
+- Install dependencies
+
+```bash
+yarn install
+```
+
+- Run Storybook to test UI
+
+```bash
+yarn storybook
+```
