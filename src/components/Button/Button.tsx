@@ -6,7 +6,7 @@ import { useHover } from '../../hooks/useHover';
 
 export interface ButtonProps {
   text: string;
-  type: 'success' | 'warning' | 'error';
+  type?: 'success' | 'warning' | 'error';
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
@@ -18,11 +18,13 @@ export const Button: React.FC<ButtonProps> = ({ text, type, onClick }) => {
   return (
     <button
       ref={ref}
-      type="button"
       className={[
-        `button button-${type}`,
+        'button',
+        type ? `button-${type}` : '',
         isHovered ? 'button--hovered' : '',
-      ].join(' ')}
+      ]
+        .join(' ')
+        .trim()}
       style={{
         opacity: isHovered ? 0.7 : 1,
       }}
